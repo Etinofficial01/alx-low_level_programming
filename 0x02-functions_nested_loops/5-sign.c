@@ -14,21 +14,17 @@ int print_sign(int n)
 	{
 		value = 1;
 		_putchar('+');
-		_putchar('\n');
 	}
 	else if (n == 0)
 	{
 		value = 0;
 		_putchar('0');
-		_putchar('\n');
 	}
 	else
 	{
 		value = -1;
 		_putchar('-');
-		_putchar('\n');
 	}
-	_putchar('\n');
 
 	return (value);
 }
