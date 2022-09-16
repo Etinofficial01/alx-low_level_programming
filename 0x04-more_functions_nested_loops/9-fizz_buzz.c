@@ -3,24 +3,27 @@
 
 /**
  * main - Entry point
- * Return: Aways 0
+ * Return: Always 0
  */
 int main(void)
 {
-	int i = 1;
+	int i;
 
 	for (; i < 100; i++)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 			printf("FizzBuzz");
+				printf(" ");
 		else if (i % 3 == 0)
 			printf("Fizz");
+				printf(" ");
 		else if (i % 5 == 0)
 			printf("Buzz");
+				printf(" ");
 		else
 			printf("%d ", i);
 	}
-	printf("\n");
+	printf("Buzz\n");
 
 	return (0);
 }
