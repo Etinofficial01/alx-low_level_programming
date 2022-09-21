@@ -5,7 +5,7 @@
  * @a: an array of integers
  * @n: number of elements to swap
  */
-void reverse_array(int *a, int *n)
+void reverse_array(int *a, int n)
 {
 	int i, j, tmp;
 
