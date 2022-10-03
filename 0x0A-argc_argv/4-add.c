@@ -1,8 +1,10 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
- * main - function that adds positive numbers
+ * main - a function that prints addition of numbers
  * @argc: argc parameter
  * @argv: an array of a command listed
  * Return: 0 for success
@@ -22,7 +24,6 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
-
 	for (k = 1; k < argc; k++)
 	{
 		num = atoi(argv[k]);
@@ -30,3 +31,4 @@ int main(int argc, char *argv[])
 	}
 	printf("%d\n", result);
 	return (0);
+}
