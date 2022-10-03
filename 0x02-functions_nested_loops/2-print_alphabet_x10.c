@@ -2,18 +2,23 @@
 
 /**
  * print_alphabet_x10 - prints alphabets 10 times using _putchar function followed by a new line
- *
- * Return: Nothing.
  */
 void print_alphabet_x10(void)
 {
 	char j;
 	int i;
 
-	for (i = 0; i < 10; i++)
+	i = 0;
+
+	while (i < 10;)
 	{
-		for (j = 'a'; j <= 'z'; j++)
+		j = 'a';
+		while (j <= 'z')
+		{
 			_putchar (j);
+			j++;
+		}
 		_putchar ('\n');
+		i++;
 	}
 }
