@@ -1,0 +1,1 @@
+task 0 defines a new structure with new elements, task 1 writes a function that initializes a variable of type struct dog, task 2 writes a funcyion that prints struct dog, task 3 defines a new type dog_t as a new name for the type struct dog, task 4 writes a function that creates a new dog, task 5 writes a function that frees dogs
