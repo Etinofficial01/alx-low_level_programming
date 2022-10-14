@@ -7,24 +7,21 @@
  * @separator: An input string to be printed between numbers.
  * @n: number of parameters
  * @...: Other parameters
- * Return: The of all parameters
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	va_list ap;
-	unsigned int i = 0;
-	int nums;
+	va_list nums;
+	unsigned int index;
 
-	va_start(ap, n);
-	for (; i < n; i++)
+	va_start(nums, n);
+	for (index = 0; index < n; index++)
 	{
-		nums = va_arg(ap, int)
-		printf("%d", nums);
-		if (separator == NULL)
-			continue;
-		if (i < n - 1)
+		printf("%d", va_arg(nums, int));
+
+		if (index != (n - 1) && separator != NULL)
 			printf("%s", separator);
 	}
 	printf("\n");
-	va_end(ap);
+
+	va_end(nums);
 }
